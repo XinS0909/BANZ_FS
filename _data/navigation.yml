@@ -76,7 +76,7 @@ dataset-en:
     children:
       - title:  Collection
         url:    /docs/en/dataset-source
-      - title:  Multi-View & Multi-Modal
+      - title:  Data Samples
         url:    /docs/en/dataset-collection
   - title:      Gloss Type
     children:
