@@ -1,6 +1,6 @@
 ---
 layout: page
-title: BANZ-FS: BANZSL Fingerspelling Dataset
+title: BANZ-FS
 permalink: /docs/en/introduction
 key: docs-introduction
 article_header:
