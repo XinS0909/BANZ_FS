@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Why do we need MM-WLAuslan Dataset?
+title: Background & Motivation
 permalink: /docs/en/background
 key: docs-background
 article_header:
@@ -40,19 +40,27 @@ article_header:
 
 
 
-**Sign Language (SL)** is the primary mode of communication for deaf or hearing-impaired individuals.
-Each sign language possesses its own vocabulary and grammatical rules, akin to spoken languages.
-Notably, even within regions that share a commonly spoken language, such as the United States, Australia, and the United Kingdom, distinct native sign languages are prevalent.
-To facilitate communication between the deaf and hearing communities, Isolated Sign Language Recognition (ISLR) is highlighted as a fundamental sign language understanding task.
-ISLR aims to recognize an individual sign gloss, which is a written representation of signs using words from a spoken language, into a corresponding word or phrase in spoken languages.
+**Sign languages (SL)** are natural languages that serve as primary modes of communication for Deaf and hard-of-hearing individuals, enabling rich self-expression and full participation in society.
+Like spoken languages, sign languages possess their own grammars and lexicons, and they vary widely across regions—even in places that share a common spoken language.
+For example, American Sign Language (ASL) and Australian Sign Language (Auslan) are linguistically distinct, each with unique phonological, lexical, and syntactic features.
+To bridge communication between Deaf and hearing communities, sign language translation (SLT) systems have been developed to automatically translate sign videos into spoken languages.
 
-With emerging deep learning techniques and large-scale sign language datasets, ISLR achieves promising progress recently.
-Researchers from various countries construct word-level sign language datasets and thus promote the development of ISLR in the respective sign languages, such as American sign language (ASL), British sign language (BSL), Chinese sign language (CSL) and German sign language (DGS).
+Among sign languages, **fingerspelling (FS)**, the manual representation of alphabets and numbers, plays a critical role in SLT, particularly for expressing proper nouns, technical terms, and items not represented in the standard sign lexicon.
+Unlike single-handed systems, such as ASL, BANZSL employs a distinctive two-handed fingerspelling system.
+This two-handed system introduces significant challenges for machine translation, such as frequent self-occlusion, high intra-letter variations, and rapid handshape transitions.
+Hence, accurate recognition of fingerspelling is crucial, as it frequently conveys essential semantic content, such as named entities, numerical data, and domain-specific vocabulary that lack conventional sign equivalents.
 
-**Auslan** is the sign language used by the majority of the Australian Deaf community. The term Auslan is a portmanteau of “Australian Sign Language”, coined by Trevor Johnston in the 1980s, although the language itself is much older. Auslan is related to British Sign Language (BSL) and New Zealand Sign Language (NZSL); the three have descended from the same parent language, and together comprise the BANZSL language family. Auslan has also been influenced by Irish Sign Language (ISL) and more recently has borrowed signs from American Sign Language (ASL). As with other sign languages, Auslan’s grammar and vocabulary is quite different from English. Its origin cannot be attributed to any individual; rather, it is a natural language that emerged spontaneously and has changed over time.
-Meanwhile, according to the Australian Federal Department of Health and Aged Care ([DHAC](https://www.health.gov.au/topics/ear-health/about)), as of 14 May 2024, one in six Australians, over 3.6 million people, had hearing loss affecting them, and the number is expected to increase to 7.8 million people by 2060.
-However, to the best of our knowledge, there is no publicly available large-scale Auslan dataset for ISLR.
-Due to the regional nature of sign languages and the societal commitment to supporting individuals with hearing impairments, word-level Australian Sign Language (Auslan) datasets are inevitably and urgently needed in order to investigate automatic recognition.
+Despite significant progress in sign language research, most publicly available datasets focus on single-handed fingerspelling understanding task, such as those used in ASL and GSL, leaving the two-handed fingerspelling system of BANZSL comparatively underexplored.
+Moreover, existing datasets often lack the scale and linguistic realism required for fingerspelling research.
+In particular, they rarely capture naturally occurring phenomena, such as spelling errors, lexical abbreviations, acronyms, and inline corrections, which are commonly encountered in practical scenarios.
+This highlights a critical gap: the need for a large-scale, real-world BANZSL fingerspelling dataset to facilitate the study on BSL, Auslan and NZSL.
 
-**MM-WLAuslan** is the first large-scale Auslan isolated sign language recognition dataset. It has three features (1) **<u>the largest amount</u>** of data, (2) **<u>the most extensive</u>** vocabulary, and (3) **<u>the most diverse</u>** of multi-modal camera views.
-Our releasing this dataset will help bridge that gap and provide necessary data resources for creating more equitable and inclusive AI systems. In the rapidly advancing era of AI, it is of paramount importance to ensure that the needs and inclusion of the Australian deaf community are not overlooked.
+To address this gap, we introduce **BANZ-FS**, a large-scale dataset dedicated to BANZSL fingerspelling, collected from both real-world and controlled environments.
+BANZ-FS integrates multiple sources to reflect diverse and authentic usage scenarios: (1) professional live Auslan interpretations from ABC News with Auslan2 broadcasts (capturing formal, high-register discourse); (2) controlled laboratory recordings (offering clean, high-quality reference data); and (3) user-generated vlog content from online platforms and social media (representing casual, daily communication).
+This diverse composition allows BANZ-FS to capture a broad spectrum of signing tempos and registers, from formal broadcast interpretation to everyday interaction.
+
+Specifically, **BANZ-FS** comprises more than 35,000 aligned fingerspelling instances.
+During annotating fingerspelling, we additionally align 40 hours of Auslan news footage, which not only substantially extends the prior benchmark Auslan-Daily News but also allows us to investigate recognition accuracy of fingerspelling within contexts.
+Our annotation protocol includes fine-grained alignment across video ↔ subtitles, video ↔ fingerspelled letters, and video ↔ target lexicons.
+We explicitly annotate and categorize key linguistic phenomena prevalent in fingerspelling, including abbreviations, acronyms, misspellings, and inline corrections.
+Furthermore, our proposed dataset captures the visual and articulatory complexities inherent in two-handed fingerspelling systems, underscoring the challenges of accurate fingerspelling recognition in BANZSL.
