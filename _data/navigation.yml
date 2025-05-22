@@ -78,16 +78,13 @@ dataset-en:
         url:    /docs/en/dataset-source
       - title:  Data Samples
         url:    /docs/en/dataset-collection
-  - title:      Gloss Type
+  - title:      FS Phenomena & Challenges
     children:
-      - title:  Alphabet
-        url:    /docs/en/dataset-annotation-fingerspelling
-      - title:  Number
-        url:    /docs/en/dataset-annotation-gloss
-      - title:  Fingerspelling
-        url:    /docs/en/dataset-annotation-sentence
-      - title:  Commonly Used
-        url:    /docs/en/dataset-annotation-pose-sequence-of-human
+      - title:  FS Phenomena
+        url:    /docs/en/dataset-phenomena
+      - title:  Visual Challenges
+        url:    /docs/en/dataset-challenges
+
   - title: Statistics
     children:
       - title: MM-WLAuslan Statistics
