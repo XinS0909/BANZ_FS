@@ -87,7 +87,7 @@ dataset-en:
 
   - title: Statistics
     children:
-      - title: MM-WLAuslan Statistics
+      - title: BANZ-FS Statistics
         url: /docs/en/dataset-statistics-task
   - title:      Tasks
     children:
