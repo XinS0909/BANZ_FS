@@ -11,8 +11,7 @@ article_header:
 ---
 
 
-<div>{%- include extensions/youtube.html id='x4ckW_cj8q8' -%}</div>
-
+<!-- <div>{%- include extensions/youtube.html id='x4ckW_cj8q8' -%}</div> -->
 
 **Fingerspelling** plays a vital role in sign languages, particularly for conveying names, technical terms, and words not found in the standard lexicon.
 However, evaluation  of two-handed fingerspelling detection and recognition is rarely addressed in  existing sign language datasets—particularly for BANZSL (British, Australian, and New Zealand Sign Language), which share a common two-handed manual alphabet.
