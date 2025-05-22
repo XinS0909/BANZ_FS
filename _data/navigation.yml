@@ -91,9 +91,9 @@ dataset-en:
         url: /docs/en/dataset-statistics-task
   - title:      Tasks
     children:
-      - title:  In-Domain ISLR Setting
+      - title:  FS-Related Tasks
         url:    /docs/en/dataset-main-task
-      - title:  Cross-Domain ISLR Setting
+      - title:  Sign Language Translation
         url:    /docs/en/dataset-sub-tasks
   - title:      Dataset Download
     children:
