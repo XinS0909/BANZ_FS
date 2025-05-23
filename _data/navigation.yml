@@ -89,7 +89,7 @@ dataset-en:
     children:
       - title: BANZ-FS Statistics
         url: /docs/en/dataset-statistics-task
-  - title:      Tasks
+  - title:      Tasks & Benchmarks
     children:
       - title:  FS-Related Tasks
         url:    /docs/en/dataset-main-task
